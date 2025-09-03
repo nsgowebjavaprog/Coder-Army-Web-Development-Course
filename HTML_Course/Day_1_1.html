@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeMaster Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      padding: 0.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background-color: #555;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #0078d7;
+    }
+    section {
+      padding: 2rem;
+      background-color: white;
+      margin: 1rem auto;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0078d7;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form input[type="submit"] {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+      background-color: #005fa3;
+    }
+    audio, video {
+      display: block;
+      margin: 1rem auto;
+    }
+    progress, meter {
+      width: 100%;
+      height: 20px;
+    }
+    svg {
+      display: block;
+      margin: 2rem auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+    }
+    pre {
+      background-color: #eee;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    article {
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>💻 CodeMaster Academy</h1>
+  <p>Learn to code. Anytime. Anywhere.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#instructors">Instructors</a></li>
+    <li><a href="#lessons">Lessons</a></li>
+    <li><a href="#register">Register</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <h2>🏠 Welcome</h2>
+  <p>We offer interactive coding lessons, expert instructors, and a vibrant community of learners.</p>
+  <marquee behavior="scroll" direction="left">🔥 New courses launching this month: Python, Web Dev, AI & ML!</marquee>
+</section>
+
+<section id="courses">
+  <h2>📚 Courses</h2>
+  <ul>
+    <li>HTML & CSS Fundamentals</li>
+    <li>JavaScript for Beginners</li>
+    <li>Python Programming</li>
+    <li>React & Frontend Frameworks</li>
+    <li>Backend with Node.js</li>
+    <li>Machine Learning with Python</li>
+  </ul>
+</section>
+
+<section id="instructors">
+  <h2>🧑‍🏫 Instructors</h2>
+  <article>
+    <h3>👩‍💻 Priya Sharma</h3>
+    <p>Frontend Developer with 8 years of experience. Specializes in React and UI/UX design.</p>
+  </article>
+  <article>
+    <h3>👨‍💻 Arjun Patel</h3>
+    <p>Backend Engineer and Python expert. Loves teaching algorithms and data structures.</p>
+  </article>
+</section>
+
+<section id="lessons">
+  <h2>📝 Sample Lesson</h2>
+  <details>
+    <summary>Click to view lesson content</summary>
+    <h3>Lesson 1: What is HTML?</h3>
+    <p>HTML stands for HyperText Markup Language. It is the standard language for creating web pages.</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+  </details>
+</section>
+
+<section id="register">
+  <h2>📦 Register</h2>
+  <form>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="course">Select Course:</label>
+    <select id="course" name="course">
+      <option value="html">HTML & CSS</option>
+      <option value="js">JavaScript</option>
+      <option value="python">Python</option>
+    </select>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <input type="submit" value="Register">
+  </form>
+</section>
+
+<section id="feedback">
+  <h2>🗣️ Feedback</h2>
+  <form>
+    <label for="rating">Rate your experience (1–5):</label>
+    <input type="range" id="rating" name="rating" min="1" max="5">
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+    <input type="submit" value="Submit Feedback">
+  </form>
+</section>
+
+<section>
+  <h2>🎧 Sample Lecture</h2>
+  <audio controls>
+    <source src="lecture.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+
+<section>
+  <h2>📺 Sample Video</h2>
+  <video width="320" height="240" controls>
+    <source src="lesson.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section>
+  <h2>📊 Progress Tracker</h2>
+  <label for="progress">HTML Course Completion:</label>
+  <progress id="progress" value="80" max="100">80%</progress>
+
+  <label for="meter">Confidence Level:</label>
+  <meter id="meter" value="0.7">70%</meter>
+</section>
+
+<section>
+  <h2>🧩 SVG Animation</h2>
+  <svg width="200" height="200">
+    <circle cx="100" cy="100" r="40" fill="blue">
+      <animate attributeName="r" from="40" to="80" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </svg>
+</section>
+
+<footer>
+  <p>&copy; 2025 CodeMaster Academy</p>
+  <address>
+    Contact us: <a href="mailto:support@codemaster.com">support@codemaster.com</a>
+  </address>
+</footer>
+
+</body>
+</
