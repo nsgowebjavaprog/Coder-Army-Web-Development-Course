@@ -1,0 +1,12 @@
+.first {
+    text-align: center;
+    background-color: rgb(240, 180, 106);
+    border-radius: 20%;
+    border: 2px solid rgb(42, 42, 212);
+}
+
+#second{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+}
