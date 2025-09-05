@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    
+    <form>
+
+        <header>
+            <h1>Job Application: Junior Web Developer</h1>
+            <p>Thank you for your interest in joining our team. Please fill out the application below!</p>
+            <hr>
+        </header>
+
+        <!-- 1st Section: Personal Information -->
+        <h2>Personal Information</h2>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" name="name" id="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" name="phone" id="phone"><br><br>
+
+        <label for="linkedin">LinkedIn Profile URL:</label><br>
+        <input type="url" name="linkedin" id="linkedin" placeholder="https://linkedin.com"><br>
+        <hr>
+
+        <!-- 2nd Section: Professional Experience -->
+        <h2>Professional Experience</h2>
+
+        <label for="resume">Upload Your Resume (PDF / DOCX):</label><br>
+        <input type="file" name="resume" id="resume"><br><br>
+
+        <label for="cover">Cover Letter:</label><br>
+        <textarea name="cover" id="cover" rows="5" cols="30" placeholder="Enter additional information"></textarea><br><br>
+
+        <label for="exp">Years of Professional Experience:</label><br>
+        <input type="number" name="exp" id="exp" placeholder=""><br><br>
+
+        <label for="date">Earliest Possible Start Date:</label><br>
+        <input type="date" name="date" id="date"><br>
+        <hr>
+
+        <!-- 3rd Section: Skills and Availability -->
+        <h2>Skills and Availability</h2>
+
+        <label>Primary Skillset (Choose one):</label><br>
+        <input type="radio" name="skillset" id="frontend" value="frontend">
+        <label for="frontend">Front-End Development</label><br>
+
+        <input type="radio" name="skillset" id="backend" value="backend">
+        <label for="backend">Back-End Development</label><br>
+
+        <input type="radio" name="skillset" id="fullstack" value="fullstack">
+        <label for="fullstack">Full Stack Development</label><br><br>
+
+        <label>Additional Skills:</label><br>
+        <input type="checkbox" name="skills" id="react" value="react">
+        <label for="react">React</label><br>
+
+        <input type="checkbox" name="skills" id="node" value="node">
+        <label for="node">Node.js</label><br>
+
+        <input type="checkbox" name="skills" id="db" value="db">
+        <label for="db">Database</label><br>
+
+        <input type="checkbox" name="skills" id="cloud" value="cloud">
+        <label for="cloud">Cloud / DevOps</label><br><br>
+
+        <label for="worktype">Preferred Work Type:</label>
+        <select name="worktype" id="worktype">
+            <option value="full">Full Time</option>
+            <option value="part">Part Time</option>
+            <option value="remote">Remote</option>
+        </select><br><br>
+        <hr>
+
+        <!-- 4th Section: Final Confirmation -->
+        <h2>Final Confirmation</h2>
+
+        <input type="checkbox" name="iam" id="iam">
+        <label for="iam">I am authorized to submit this application</label><br><br>
+
+        <label for="hear">How did you hear about us?</label><br>
+        <input type="text" name="hear" id="hear" placeholder=""><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear Form</button>
+
+        <footer>
+            <hr>
+            Developed By NS LONI
+        </footer>  
+
+    </form>
+
+</body>
+</html>
