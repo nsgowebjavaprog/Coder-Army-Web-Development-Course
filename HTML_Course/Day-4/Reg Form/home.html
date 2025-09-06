@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <form class="application-form" action="#" method="post" enctype="multipart/form-data">
+        <header>
+            <h1>Apply for Junior Web Developer</h1>
+            <p>We're excited to learn more about you. Please complete the form below.</p>
+        </header>
+
+        <section>
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourname" />
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="form-group">
+                <label for="resume">Resume (PDF/DOCX) *</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required />
+            </div>
+            <div class="form-group">
+                <label for="cover">Cover Letter</label>
+                <textarea id="cover" name="cover" rows="5" placeholder="Tell us why you're a great fit..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exp">Years of Experience</label>
+                <input type="number" id="exp" name="exp" min="0" />
+            </div>
+            <div class="form-group">
+                <label for="date">Available Start Date</label>
+                <input type="date" id="date" name="date" />
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills & Preferences</h2>
+            <div class="form-group">
+                <label>Primary Skillset</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="skillset" value="frontend" required /> Front-End</label>
+                    <label><input type="radio" name="skillset" value="backend" /> Back-End</label>
+                    <label><input type="radio" name="skillset" value="fullstack" /> Full Stack</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Additional Skills</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="skills" value="react" /> React</label>
+                    <label><input type="checkbox" name="skills" value="node" /> Node.js</label>
+                    <label><input type="checkbox" name="skills" value="db" /> Database</label>
+                    <label><input type="checkbox" name="skills" value="cloud" /> Cloud / DevOps</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="worktype">Preferred Work Type</label>
+                <select id="worktype" name="worktype">
+                    <option value="full">Full Time</option>
+                    <option value="part">Part Time</option>
+                    <option value="remote">Remote</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <h2>Final Confirmation</h2>
+            <div class="form-group">
+                <label><input type="checkbox" id="iam" name="iam" required /> I confirm that all information is accurate</label>
+            </div>
+            <div class="form-group">
+                <label for="hear">How did you hear about us?</label>
+                <input type="text" id="hear" name="hear" />
+            </div>
+        </section>
+
+        <div class="form-actions">
+            <button type="submit">Submit Application</button>
+            <button type="reset">Clear Form</button>
+        </div>
+
+        <footer>
+            <p>Developed by NS Ai SCHOOL</p>
+        </footer>
+    </form>
+</body>
+</html>
