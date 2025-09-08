@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Application</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; background-color: #f0f0f0; margin:0; padding:0; }
+        nav a { text-decoration: none; margin: 0 10px; }
+        nav a:hover { color: #ff9800; }
+        h2 { color: #333; margin-top: 20px; }
+        p { max-width: 600px; margin: 10px auto; color: #555; }
+        .gallery img { width: 300px; height: 450px; margin: 10px; border-radius: 5px; }
+        .audio-player { margin: 20px 0; }
+        .song-title { font-weight: bold; margin-bottom: 5px; color: #333; }
+    </style>
 </head>
 <body>
 
-    <header style="text-align:center;">
-        <h1>Home</h1>
-        
-        <!-- Navigation in 1 line -->
+    <header>
+        <h1>Fitness Hub</h1>
+        <hr>
         <nav>
             <a href="index.html">Home</a> |
             <a href="exercise.html">Exercise</a> |
             <a href="diet.html">Diet</a> |
             <a href="contact.html">Contact</a>
         </nav>
-        <hr>
     </header>
 
-    <main style="text-align:center;">
-        <h2>This is Our Gym Information Page</h2>
+    <main>
+        <h2>Welcome to Our Gym</h2>
+        <p>We provide modern equipment, expert trainers, and personalized plans. Start your fitness journey today!</p>
 
-        <p>
-            Welcome to our fitness hub where health meets lifestyle. 
-            We provide modern equipment, expert trainers, and personalized plans. 
-            Start your journey today and achieve your fitness goals with us.
-        </p>
-        <p>
-            Welcome to our fitness hub where health meets lifestyle. 
-            We provide modern equipment, expert trainers, and personalized plans. 
-            Start your journey today and achieve your fitness goals with us.
-        </p>
+        <div class="gallery">
+            <img src="1.jpg" alt="Gym Photo 1">
+            <img src="2.jpg" alt="Gym Photo 2">
+            <img src="3.jpg" alt="Gym Photo 3">
+            <img src="4.jpg" alt="Gym Photo 4">
+        </div>
 
-        
-        <!-- Two photos side by side -->
-        <img src="info1.png" alt="Photo 1" width="500" height="400" style="display:inline-block; margin:10px;">
-        <img src="info2.png" alt="Photo 2" width="500" height="400" style="display:inline-block; margin:10px;">
+        <div class="audio-player">
+            <div class="song-title">🎵 Play Song: WAVY</div>
+            <audio controls>
+                <source src="./wavy.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
-         <img src="info1.png" alt="Photo 1" width="500" height="400" style="display:inline-block; margin:10px;">
-        <img src="info2.png" alt="Photo 2" width="500" height="400" style="display:inline-block; margin:10px;">
     </main>
-
     <hr>
-    <footer style="text-align:center; margin-top:20px;">
-        <p>CopyRight &copy; All Rights Reserved 2025</p>
+
+    <footer>
+        <p>&copy; 2025 Fitness Hub. All Rights Reserved.</p>
     </footer>
 
 </body>
